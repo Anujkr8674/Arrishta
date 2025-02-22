@@ -1,0 +1,325 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.sparkline8-hd,
+.sparkline14-hd {
+    background-color: #fff !important;
+}
+
+.sparkline8-hd h1 {
+    color: #e87772 !important;
+}
+
+.form-group-inner .row .col-md-4 {
+    padding-left: 1% !important;
+}
+
+utline-icon,
+.smart-outline-icon,
+.sparkline7-outline-icon,
+.sparkline8-outline-icon,
+.sparkline9-outline-icon,
+.sparkline10-outline-icon,
+.sparkline11-outline-icon,
+.sparkline12-outline-icon,
+.sparkline13-outline-icon,
+.sparkline14-outline-icon,
+.sparkline15-outline-icon,
+.sparkline16-outline-icon,
+.sparkline17-outline-icon {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.page-title h1 {
+    margin-top: 2%;
+    color: #00446c;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*font-family: 'Kaushan Script', cursive;*/
+}
+
+.head-line {
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 0px auto 30px;
+    background: #333;
+}
+
+.register-logo {
+    text-align: center;
+    margin-bottom: -11px;
+}
+
+.register-logo-box {
+    background: url(../img/login-bg.jpg) no-repeat;
+}
+
+.register-wrapper {
+    height: 100%;
+}
+
+.register-logo-box {
+    padding: 50% 50px 130% 20px;
+    text-align: left !important;
+    height: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background: url(../img/login-bg.jpg) no-repeat;
+}
+
+.register-logo-box h1 {
+    color: #fff;
+    font-size: 2.0em;
+}
+
+.register-logo-box h3 {
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    width: 80% !important;
+}
+
+.padd-0 {
+    padding: 0px !important;
+}
+
+.register-content {
+    background: #fff;
+    right: 50px;
+    padding: 20px 20px 69px 20px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+    /*margin-top: 50px !important;*/
+    /*z-index: 9999999999999;*/
+    position: relative;
+}
+
+.register-content .sparkline-line {
+    background-color: transparent;
+}
+
+.register-content .sparkline-line h1 {
+    color: #000 !important;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #3e8f55;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+}
+
+.submit {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    font-family: 'Raleway', sans-serif !important;
+    border-radius: 7px;
+    /*background-image: linear-gradient(to bottom, #2d8dae, #26809f, #1f7391, #186682, #105a74) !important;*/
+}
+
+.submit a {
+    color: #fff !important;
+}
+
+.backlogin {
+    width: 100%;
+    padding: 13px 5px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    font-family: 'Raleway', sans-serif !important;
+    border-radius: 7px;
+    background-color: #fff;
+    border: 2px solid #3e8f55 !important;
+}
+
+.otp {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #333 !important;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    font-family: 'Raleway', sans-serif !important;
+    border-radius: 7px;
+    background-color: #fff !important;
+    border: 2px solid #3e8f55 !important;
+}
+
+.btn-success {
+    color: #333 !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .register-logo-box h3 {
+        color: #fff;
+        font-size: 2.6em;
+        font-weight: 600;
+        line-height: 1.5em;
+        width: 53% !important;
+        /*width: 55% !important;*/
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .register-logo-box {
+        position: relative !important;
+        padding: 3% 50px 30% 20px !important;
+        text-align: left !important;
+        height: 100% !important;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    }
+    .register-content {
+        background: #fff;
+        right: 0px !important;
+        padding: 20px;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+        /*margin-top: -245px !important;*/
+        z-index: 9999999999999;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .register-logo-box h3 {
+        color: #fff;
+        font-size: 2.8em;
+        font-weight: 600;
+        line-height: 1.5em;
+        width: 100% !important;
+    }
+    .register-content {
+        background: #fff;
+        right: 0px !important;
+        padding: 15px 20px;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+        /*margin-top: 31px !important;*/
+        z-index: 9999999999999;
+    }
+    .register-logo-box {
+        padding: 10% 50px 30% 20px !important;
+        text-align: left !important;
+        height: 100% !important;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        position: relative !important;
+        display: none;
+    }
+    .register-logo-box h3 {
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 660px) {
+    .page-title h1 {
+        margin-top: 7% !important;
+        color: #00446c;
+        font-size: 25px;
+        text-align: center;
+    }
+    #registerPanelCount .form-group-inner .row #JoiningDay {
+        margin-right: 3px !important;
+    }
+    /*.register-content{
+		margin-top: 163px !important;
+	}*/
+}
+
+@media only screen and (max-width: 480px) {
+    .register-content {
+        background: #fff;
+        right: 0px !important;
+        padding: 20px;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+        /*margin-top: 154px !important;*/
+        z-index: 9999999999999;
+    }
+}
+
+@media (max-width: 460px) {
+    #registerPanelCount {
+        width: 100% !important;
+        margin-top: 0% !important;
+        padding-left: 2%;
+    }
+    .page-title h1 {
+        margin-top: 5% !important;
+        color: #00446c;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .register-content {
+        background: #fff;
+        right: 0px !important;
+        padding: 20px;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+        /*margin-top: 10px !important;*/
+        z-index: 9999999999999;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .register-content {
+        background: #fff;
+        right: 0px !important;
+        padding: 20px;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);
+        /*margin-top: 154px !important;*/
+        z-index: 9999999999999;
+    }
+}
+
+@media (max-width: 320px) {
+    #registerPanelCount .form-group-inner .row #JoiningDay {
+        width: 26%;
+        margin-right: 3px;
+        border: 1px solid #e5e6e7;
+        padding: 6px 12px;
+    }
+    .register-logo-box h3 {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+    .register-logo-box h1 {
+        color: #fff;
+        font-size: 1.0em;
+    }
+    .page-title h1 {
+        margin-top: 5% !important;
+        color: #00446c;
+        font-size: 25px;
+        text-align: center;
+    }
+    /*.register-content {
+		margin-top: 12px !important;
+	}*/
+}

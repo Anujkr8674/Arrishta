@@ -1,0 +1,1262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome To Our Company</title>
+
+
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- <link href="/compliance.wealthgenics.com/compliance.wealthgenics.com/Content/Compliance/css/bootstrap.css" rel="stylesheet" /> -->
+
+
+
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/main-style.css" rel="stylesheet" />
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/animate.css" rel="stylesheet" />
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/hover.css" rel="stylesheet" />
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/set1.css" rel="stylesheet" />
+
+
+    <!---------------------tab------------------------->
+
+
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/tabs.css" rel="stylesheet" />
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/tabstyles.css" rel="stylesheet" />
+    <script src="/compliance.wealthgenics.com/Content/Compliance/js/modernizr.custom.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!---------------------vertical tab------------------------->
+
+    <link href="/compliance.wealthgenics.com/Content/Compliance/css/easy-responsive-tabs.css" rel="stylesheet" />
+    <!---------------------vertical tab------------------------->
+
+</head>
+<style>
+    .Menu_li {
+        margin: 0 0.5em;
+    }
+
+    .MenuBackground {
+        background: #00247e;
+        color: #fff !important;
+    }
+
+    @media all and (max-width:1025px) and (min-width:1020px) {
+        ul {
+            font-size: 13px !important;
+        }
+    }
+</style>
+
+<body>
+    <!-- Popup -->
+    <!--<div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body"> <img src="web_design/images/popup.jpg" width="100%" /> </div>
+        </div>
+      </div>
+    </div>-->
+    <!-- Popup -->
+    <!----------------Horizontal tab------------------->
+    <div class="container">
+        <div class="compliance-header">
+            <div class="col-md-3">
+
+
+                <a href="/" class="logo">
+    
+    <img title="" alt="WealthGenics Educart Pvt. Ltd." src="/Themes/Vnext/compliance.wealthgenics.com/Content/ThemeLogo/VnextLogo.png">
+    
+</a>
+
+            </div>
+            <div class="col-md-4">
+
+
+            </div>
+
+
+
+            <div class="col-md-5">
+
+
+                <div>
+                    <p><strong>Last Updated On - </strong><label for="fname">22/02/2025</label></p>
+
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="banner">
+        <h3>Compliance Desk</h3>
+    </div>
+    <section>
+        <div class="container">
+            <div class="tabs tabs-style-linebox">
+                <nav>
+                    <ul>
+                        <a class="Menu_li" href="/Compliance?Length=10" id="CI">Company Info</a> <a class="Menu_li" href="/Compliance/CompanyDocList?Length=10" id="CD">Company Doc</a> <a class="Menu_li" href="/Compliance/FinancialDocList?Length=10" id="FD">Financial Doc</a>                        <a class="Menu_li" href="/Compliance/GSTDocList?Length=10" id="GST">GST</a> <a class="Menu_li" href="/Compliance/DiListSellerList?Length=10" id="DLS">Sellers</a> <a class="Menu_li" href="/Compliance/OtherDocList?Length=10" id="OD">Other</a>
+                        <li style="display:none;"><a href="#section-linebox-3"><span>GST Document</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+                    <section id="section-linebox-1">
+                        <div class="demo">
+                            <h2 class="company-info">Company Info</h2>
+                            <div class="info_em_bar">
+                                <div class="info_em_bar_bg"></div>
+                            </div>
+                            <div id="verticalTab" style="display:none">
+                                <ul class="resp-tabs-list">
+                                    <li>Self Declaration </li>
+                                    <li>Company Info </li>
+                                    <li>Customer Care </li>
+                                    <li>Grievance Officer</li>
+                                    <li>Nodal Officer</li>
+                                    <li>Branch Offices</li>
+                                    <li>Director Info</li>
+                                </ul>
+                                <div class="resp-tabs-container">
+
+                                    <div>
+                                        <h2>Self Declaration</h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div id="SelfDeclDtls">
+
+                                        </div>
+                                        <script>
+                                            $(document).ready(function() {
+
+                                                $.ajax({
+                                                    url: "/Compliance/SelfDeclaration",
+                                                    type: 'POST',
+                                                    async: false,
+                                                    data: {},
+                                                    success: function(result) {
+                                                        $("#SelfDeclDtls").html(result);
+                                                    }
+                                                });
+                                                setTimeout(() => {
+                                                    $('#verticalTab').show();
+                                                }, 2000);
+                                            });
+                                        </script>
+                                    </div>
+
+                                    <!----------------Company Info start----------------------->
+                                    <div style="display:none">
+                                        <h2>Company Info</h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div class="content-box">
+                                            <div id="CompInfoDtls">
+
+                                            </div>
+                                            <script>
+                                                $(document).ready(function() {
+
+                                                    $.ajax({
+                                                        url: "/Compliance/CompanyInfoDtls",
+                                                        type: 'POST',
+                                                        async: false,
+                                                        data: {},
+                                                        success: function(result) {
+                                                            $("#CompInfoDtls").html(result);
+                                                        }
+                                                    });
+                                                });
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <!----------------Company Info end----------------------->
+                                    <!----------------Customer Care start----------------------->
+                                    <div style="display:none">
+                                        <h2>Customer Care</h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div id="CustCareDtls">
+
+                                        </div>
+                                        <script>
+                                            $(document).ready(function() {
+
+                                                $.ajax({
+                                                    url: "/Compliance/CustomerCareDtls",
+                                                    type: 'POST',
+                                                    async: false,
+                                                    data: {},
+                                                    success: function(result) {
+                                                        $("#CustCareDtls").html(result);
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <!----------------Customer Care end----------------------->
+                                    <!----------------Grievance Officerene start----------------------->
+                                    <div style="display:none">
+                                        <h2>Grievance Officer</h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div id="GrivOffDtls">
+
+                                        </div>
+                                        <script>
+                                            $(document).ready(function() {
+
+                                                $.ajax({
+                                                    url: "/Compliance/GrivanceofficerDtls",
+                                                    type: 'POST',
+                                                    async: false,
+                                                    data: {},
+                                                    success: function(result) {
+                                                        $("#GrivOffDtls").html(result);
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <!----------------Grievance Officerene end----------------------->
+                                    <!----------------Nodal Officerene start----------------------->
+                                    <div style="display:none">
+                                        <h2>Nodal Officer</h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div id="NodeOffDtls">
+
+                                        </div>
+                                        <script>
+                                            $(document).ready(function() {
+
+                                                $.ajax({
+                                                    url: "/Compliance/NodelofficerDtls",
+                                                    type: 'POST',
+                                                    async: false,
+                                                    data: {},
+                                                    success: function(result) {
+                                                        $("#NodeOffDtls").html(result);
+                                                    }
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <!----------------Nodal Officer end----------------------->
+                                    <!----------------Branch Officet start----------------------->
+
+                                    <div style="display:none">
+
+
+
+                                        <style>
+                                            @media (min-width: 600px) and (max-width: 1440px) {
+                                                .lbl {
+                                                    color: #000;
+                                                    font-size: 1.2em;
+                                                    font-weight: 600;
+                                                }
+                                                .dropdown {
+                                                    height: auto;
+                                                    float: right;
+                                                }
+                                            }
+
+                                            @media (min-width: 320px) and (max-width: 559px) {
+                                                .lbl {
+                                                    color: #000;
+                                                    font-size: 1.2em;
+                                                    font-weight: 600;
+                                                }
+                                                .dropdown {
+                                                    margin: 0 auto;
+                                                    padding: 5px;
+                                                    width: 200px;
+                                                }
+                                            }
+
+                                            @media (min-width:559px) and (max-width:600px) {
+                                                #Name {
+                                                    margin-left: -96px;
+                                                }
+                                            }
+
+                                            @media (min-width:1260px) and (max-width:1440px) {
+                                                #Name {
+                                                    margin-left: -40px;
+                                                }
+                                            }
+                                        </style>
+
+
+                                        <h2>Branch Office : <label for="fname"> &nbsp;<label id="BrOfficeName"></label></label>
+                                        </h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div class="branch-office"></div>
+                                        <div class="col-md-8 col-md-offset-3">
+
+                                            <label>
+
+            <h3>
+                <label class="lbl" for="BranchList">Select Branch :</label>
+
+                                            </h3>
+                                            </label>
+
+                                            <select class="dropdown fy-search form-control" data-val="true" data-val-required="The Branch office Name field is required." id="Name" name="Name"><option selected="selected" value="0">Select Branch</option>
+<option selected="selected" value="1">WealthGenics Office Karad</option>
+</select>
+
+                                        </div>
+
+
+
+
+                                        <div class="clearfix"></div>
+                                        <div class="content-box">
+                                            <div id="BrOffDtls">
+
+                                            </div>
+                                            <script>
+                                                $(document).ready(function() {
+                                                    LoadBrOfficeDtls();
+
+                                                    $("#Name").change(function() {
+                                                        var index = document.getElementById("Name").value;
+                                                        if (index == '0') {
+                                                            $("#BrOffDtls").html("");
+                                                            document.getElementById("BrOfficeName").innerHTML = "";
+                                                        } else {
+                                                            LoadBrOfficeDtls();
+                                                        }
+
+                                                    });
+
+                                                    function LoadBrOfficeDtls() {
+                                                        var finValue = document.getElementById("Name").value;
+
+                                                        $.ajax({
+                                                            url: "/Compliance/BrOfficeDtls",
+                                                            type: 'POST',
+                                                            async: false,
+                                                            data: {
+                                                                brName: finValue
+                                                            },
+                                                            success: function(result) {
+                                                                $("#BrOffDtls").html(result);
+                                                                var cityName = $("#CityName").text();
+                                                                document.getElementById("BrOfficeName").innerHTML = cityName;
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                            </script>
+
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+
+                                    <!------------------------Director Info Start----------------------------------->
+                                    <div style="display:none">
+
+
+
+                                        <style>
+                                            @media (min-width: 600px) and (max-width: 1440px) {
+                                                .lbl {
+                                                    color: #000;
+                                                    font-size: 1.2em;
+                                                    font-weight: 600;
+                                                }
+                                                .dropdown {
+                                                    height: auto;
+                                                    float: right;
+                                                }
+                                            }
+
+                                            @media (min-width: 320px) and (max-width: 559px) {
+                                                .lbl {
+                                                    color: #000;
+                                                    font-size: 1.2em;
+                                                    font-weight: 600;
+                                                }
+                                                .dropdown {
+                                                    margin: 0 auto;
+                                                    padding: 5px;
+                                                    width: 200px;
+                                                }
+                                            }
+
+                                            @media (min-width:559px) and (max-width:600px) {
+                                                #CMD_Name {
+                                                    margin-left: -96px;
+                                                }
+                                            }
+
+                                            @media (min-width:1260px) and (max-width:1440px) {
+                                                #CMD_Name {
+                                                    margin-left: -40px;
+                                                }
+                                            }
+                                        </style>
+
+
+                                        <h2>Company Directors/Partners Information</h2>
+                                        <div class="em_bar">
+                                            <div class="em_bar_bg"></div>
+                                        </div>
+                                        <div class="branch-office"></div>
+                                        <div class="col-md-8 col-md-offset-3">
+                                            <label>
+        <h3>
+            <label class="lbl" for="DirectorList">Select Director</label> :
+                                            </h3>
+                                            </label>
+
+                                            <select class="dropdown fy-search form-control" id="CMD_Name" name="CMD_Name"><option selected="selected" value="0">Select Director</option>
+<option selected="selected" value="1">Gopa DasGupta</option>
+<option value="2">Dr. Bajirao Kolekar</option>
+</select>
+
+                                        </div>
+
+
+
+
+                                        <div class="clearfix"></div>
+                                        <div class="content-box">
+                                            <div id="DirectorDtls">
+
+                                            </div>
+                                            <script>
+                                                $(document).ready(function() {
+                                                    LoadDirectorDtls();
+
+                                                    $("#CMD_Name").change(function() {
+                                                        var index = document.getElementById("CMD_Name").value;
+                                                        if (index == '0') {
+                                                            $("#DirectorDtls").html("");
+                                                            document.getElementById("DirectorName").innerHTML = "";
+                                                        } else {
+                                                            LoadDirectorDtls();
+                                                        }
+                                                    });
+
+                                                    function LoadDirectorDtls() {
+                                                        var dirValue = document.getElementById("CMD_Name").value;
+                                                        $.ajax({
+                                                            url: "/Compliance/DirectorDtls",
+                                                            type: 'POST',
+                                                            async: false,
+                                                            data: {
+                                                                drName: dirValue
+                                                            },
+                                                            success: function(result) {
+                                                                $("#DirectorDtls").html(result);
+                                                                var DirName = $("#CMD_Name").text();
+                                                                document.getElementById("DirectorName").innerHTML = DirName;
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                            </script>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!----------------Company Info end----------------------->
+                    <!----------------Company Document start----------------------->
+
+                    <br />
+                    <section id="section-linebox-2">
+                        <div class="demo">
+                            <div>
+                                <h2>Company Document</h2>
+                                <div class="em_bar">
+                                    <div class="em_bar_bg"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>Self Declration</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right" data-toggle="modal" data-target="#myModal">Click to View</a></label>
+
+
+                                        <!----------------Self Declration popup start----------------------->
+                                        <div class="modal fade" id="myModal" role="dialog">
+                                            <div class="modal-dialog ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h3 class="modal-title">Self Declration</h3>
+                                                    </div>
+                                                    <div class="modal-body">
+
+                                                        <img src="/compliance.wealthgenics.com/Content/Compliance/img/declairation.png" width="100%" />
+                                                    </div>
+                                                    <!-- <div class="modal-footer">
+                                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                     </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!----------------Self Declration popup end----------------------->
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>Certificate of Incorporation</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right" data-toggle="modal" data-target="#myModal2">Click to View</a></label>
+                                        <!----------------Certificate of Incorporation popup start----------------------->
+                                        <div class="modal fade" id="myModal2" role="dialog">
+                                            <div class="modal-dialog ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h3 class="modal-title">Certificate of Incorporation</h3>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="/compliance.wealthgenics.com/Content/Compliance/img/certificate.jpg" width="100%" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!----------------Certificate of Incorporation popup end----------------------->
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>MOA</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right" data-toggle="modal" data-target="#myModal3">Click to View</a></label>
+                                        <!----------------Certificate of Incorporation popup start----------------------->
+
+
+
+                                        <div class="modal fade" id="myModal3" role="dialog">
+                                            <div class="modal-dialog ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h3 class="modal-title">MOA</h3>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="/compliance.wealthgenics.com/Content/Compliance/img/MOA.png" width="100%" />
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!----------------Certificate of Incorporation popup end----------------------->
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>PAN Card</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>TAN No.</strong>	</label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>GST No.</strong>	</label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="content-box not-available">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>Import- Export Code</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="content-box not-available">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>License of Food and Saftey</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>Registration of Trademark</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="content-box available">
+                                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                        <h3>
+                                            <label for="fname"><strong>DSA Certiifcate</strong></label>
+                                        </h3>
+                                        <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br />
+                        <div class="clearfix"></div>
+                    </section>
+                    <!----------------Company Document  end----------------------->
+                    <!----------------Financial  Document  start----------------------->
+                    <section id="section-linebox-3">
+                        <div class="demo">
+                            <h2>Financial Document</h2>
+                            <div class="em_bar">
+                                <div class="em_bar_bg"></div>
+                            </div>
+                            <div class="resp-tabs-container">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <label for="membership"><h3>Select Financial Year :</h3></label>
+                                    <select name="membership" id="membership" class="fy-search">
+                                        <option value="free" selected=selected>Select Year</option>
+                                        <option value="FY 20-21">FY 20-21</option>
+                                        <option value="FY 19-20">FY 19-20</option>
+                                        <option value="FY 18-19">FY 18-19</option>
+                                        <option value="FY 17-18">FY 17-18</option>
+                                        <option value="FY 17-18">FY 16-17</option>
+                                    </select>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div>
+                                    <h2><label for="fname"><strong>FY 20-21</strong></label></h2>
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>Balance Sheet</strong></label>
+                                            </h3>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>IT Return</strong></label>
+                                            </h3>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>Audit Report		</strong></label>
+                                            </h3>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <br />
+                            <div class="clearfix"></div>
+                        </div>
+                    </section>
+
+                    <!----------------Financial  Document  end----------------------->
+                    <!----------------GST  Document  START----------------------->
+                    <section id="section-linebox-4">
+                        <div class="demo">
+                            <h2>GST Document</h2>
+                            <div class="em_bar">
+                                <div class="em_bar_bg"></div>
+                            </div>
+                            <div class="resp-tabs-container">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <label for="membership"><h3>Select Year :</h3></label>
+                                    <select name="membership" id="membership" class="fy-search">
+                                        <option value="free" selected=selected>Select Year</option>
+                                        <option value="FY 20-21">FY 20-21</option>
+                                        <option value="FY 19-20">FY 19-20</option>
+                                        <option value="FY 18-19">FY 18-19</option>
+                                        <option value="FY 17-18">FY 17-18</option>
+                                        <option value="FY 17-18">FY 16-17</option>
+                                    </select>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div>
+                                    <h2><label for="fname"><strong>FY 21-22</strong></label></h2>
+                                    </label>
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Dec-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Nov-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Oct-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Sep-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Aug-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="content-box not-available">
+                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Jul-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Jun-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>May-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="content-box available">
+                                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                            <h3>
+                                                <label for="fname"><strong>GSTR 3B</strong></label>
+                                            </h3>
+                                            <p>Apr-21</p>
+                                            <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <br />
+                            <div class="clearfix"></div>
+                        </div>
+                    </section>
+                    <!----------------GST  Document  END----------------------->
+                    <!----------------Dilist Seller  Document  Start----------------------->
+                    <section id="section-linebox-5">
+                        <div>
+
+
+
+                            <style>
+                                @media (min-width: 600px) and (max-width: 1440px) {
+                                    .lbl {
+                                        color: #000;
+                                        font-size: 1.2em;
+                                        font-weight: 600;
+                                    }
+                                    .dropdown {
+                                        height: auto;
+                                        float: right;
+                                    }
+                                }
+
+                                @media (min-width: 320px) and (max-width: 559px) {
+                                    .lbl {
+                                        color: #000;
+                                        font-size: 1.2em;
+                                        font-weight: 600;
+                                    }
+                                    .dropdown {
+                                        margin: 0 auto;
+                                        padding: 5px;
+                                        width: 200px;
+                                    }
+                                }
+
+                                @media (min-width:559px) and (max-width:600px) {
+                                    #Name {
+                                        margin-left: -96px;
+                                    }
+                                }
+
+                                @media (min-width:1260px) and (max-width:1440px) {
+                                    #Name {
+                                        margin-left: -40px;
+                                    }
+                                }
+                            </style>
+
+
+                            <h2>Branch Office : <label for="fname"> &nbsp;<label id="BrOfficeName"></label></label>
+                            </h2>
+                            <div class="em_bar">
+                                <div class="em_bar_bg"></div>
+                            </div>
+                            <div class="branch-office"></div>
+                            <div class="col-md-8 col-md-offset-3">
+
+                                <label>
+
+            <h3>
+                <label class="lbl" for="BranchList">Select Branch :</label>
+
+                                </h3>
+                                </label>
+
+                                <select class="dropdown fy-search form-control" data-val="true" data-val-required="The Branch office Name field is required." id="Name" name="Name"><option selected="selected" value="0">Select Branch</option>
+<option selected="selected" value="1">WealthGenics Office Karad</option>
+</select>
+
+                            </div>
+
+
+
+                            <h2>Delisted Seller</h2>
+                            <div class="em_bar">
+                                <div class="em_bar_bg"></div>
+                            </div>
+                            <h3>Details of Sellers who have de-listed from the Company</h3>
+                            <div class="col-md-6">
+                                <div class="content-box">
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <label for="fname"> <strong>Seller Name :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">Dinesh W</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-registered" aria-hidden="true"></i>
+                                        <label for="fname"><strong> Registration No. :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6  company-info">
+                                        <label for="fname">123456789</label>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-building-o" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>City </strong>:</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-  company-info">
+                                        <label for="fname">Pune</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>State :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">Maharashtra</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>Country :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">India</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>Mobile No. :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">020 41062333</label>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>E-mail ID :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">demo@gmail.com</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>Remark/Note :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname"></label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="content-box">
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <label for="fname"> <strong>Seller Name :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">Dinesh W</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-registered" aria-hidden="true"></i>
+                                        <label for="fname"><strong> Registration No. :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6  company-info">
+                                        <label for="fname">123456789</label>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-building-o" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>City </strong>:</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-  company-info">
+                                        <label for="fname">Pune</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>State :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">Maharashtra</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>Country :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">India</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>Mobile No. :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">020 41062333</label>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>E-mail ID :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname">demo@gmail.com</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 delisted-right">
+                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                        <label for="fname"> &nbsp;<strong>Remark/Note :</strong></label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 company-info">
+                                        <label for="fname"></label>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </section>
+                    <!----------------Dilist Seller  Document  Start----------------------->
+                    <!----------------Other Document  Start----------------------->
+                    <section id="section-linebox-6">
+                        <div>
+
+                            <h2>Other Documents</h2>
+                            <div class="em_bar">
+                                <div class="em_bar_bg"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="content-box available">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <h3>
+                                        <label for="fname"><strong>Document 1</strong></label>
+                                    </h3>
+
+                                    <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="content-box available">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <h3>
+                                        <label for="fname"><strong>Document 2</strong></label>
+                                    </h3>
+
+                                    <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="content-box available">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <h3>
+                                        <label for="fname"><strong>Document 3</strong></label>
+                                    </h3>
+
+                                    <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="content-box available">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <h3>
+                                        <label for="fname"><strong>Document 4</strong></label>
+                                    </h3>
+
+                                    <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="content-box available">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <h3>
+                                        <label for="fname"><strong>Document 5</strong></label>
+                                    </h3>
+
+                                    <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="content-box available">
+                                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                    <h3>
+                                        <label for="fname"><strong>Document 6</strong></label>
+                                    </h3>
+
+                                    <label for="fname"><a class="more-info hvr-sweep-to-right">Click to View</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </section>
+                    <!----------------Other Document  Start----------------------->
+
+                </div>
+                <!-- /compliance.wealthgenics.com/Content -->
+            </div>
+            <!-- /tabs -->
+        </div>
+    </section>
+    </div>
+
+    <!----------------horizontal tab end------------------->
+
+    <div class="compliance-footer">
+        <div class="container">
+            <p>Copyrights © 2022. All rights reserved by <a href="https://www.sankalpcs.com/" class="color-primary">SANKALP</a></p>
+        </div>
+    </div>
+
+    <!----------------Popup------------------->
+    <!----------------Popup------------------->
+    <!----------------Horizontal tab------------------->
+
+    <script src="/compliance.wealthgenics.com/Content/Compliance/js/cbpFWTabs.js"></script>
+    <script>
+        (function() {
+
+            [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
+                new CBPFWTabs(el);
+            });
+
+        })();
+    </script>
+    <!----------------vertical tab------------------->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="/compliance.wealthgenics.com/Content/Compliance/js/easy-responsive-tabs.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#verticalTab').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('#verticalTab2').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('#verticalTab3').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('#verticalTab4').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('#verticalTab6').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#verticalTab5').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+
+
+        //hover menu
+        $(document).ready(function() {
+
+            //Menu Background color
+            $(".Menu_li").removeClass("MenuBackground");
+            $('#CI').toggleClass("MenuBackground");
+            //End 
+
+
+
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

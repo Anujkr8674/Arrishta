@@ -1,0 +1,64 @@
+.lightbox {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.lightbox-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    max-width: 95%;
+    max-height: 85%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 50px #000;
+}
+
+.lightbox-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.lightbox-controls button {
+    margin: 0 4px;
+    padding: 0 4px;
+    border: 0;
+    background: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.lightbox-controls button:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+.lightbox-controls button:focus {
+    outline: none;
+    color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .lightbox-controls {
+        bottom: -50px;
+    }
+    .lightbox:hover .lightbox-controls {
+        bottom: 10px;
+    }
+}
