@@ -71,7 +71,7 @@ h5 {
 }
 
 section {
-    padding: 4em 0 4em 0 !important;
+    padding: 4em 0 4em 45px !important;
 }
 
 header {
@@ -85,11 +85,11 @@ header {
     padding-bottom: 30px;
 }
 
-.list-style {
+/* .list-style {
     list-style-image: url(../img/bullet.png) !important;
     margin-top: 20px;
     padding-left: 60px;
-}
+} */
 
 .list-style li {
     padding: 10px 0;
@@ -506,22 +506,22 @@ opportunity
     margin-top: 50px;
 }
 
-.bullet li {
+/* .bullet li {
     list-style-image: url(../img/bullet.png);
     line-height: 2.5em;
     font-size: 15px;
     color: #fff;
     margin-left: 15px;
-}
+} */
 
-.bullet2 li {
+/* .bullet2 li {
     list-style-image: url(../img/bullet.png);
     line-height: 2.5em;
     font-size: 15px;
     color: #333;
     text-align: justify;
     margin-left: 60px;
-}
+} */
 
 .bullet2 h5 {
     margin-left: 40px;
@@ -960,7 +960,7 @@ padding: 10px 0 240px 0;
         padding: 10px;
     }
     section {
-        padding: 1em 0 1em 0;
+        padding: 1em 0 1em 10px !important;
     }
 }
 
